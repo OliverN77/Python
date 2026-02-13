@@ -12,15 +12,19 @@ def a25():
     
     try:
         numero_ventas = int(input("Ingrese el número de ventas realizadas en el día: "))
+        # Almacenar los valores de las ventas en una lista
         ventas = []
-
+        
+        # Solicitar el valor de cada venta y almacenarlo en la lista
         for i in range(numero_ventas):
             i = i+1
             valor_venta = int(input(f"Ingrese el valor de la venta del producto {i}: $"))
             ventas.append(valor_venta)
 
+        # Calcular el total vendido sumando los valores de las ventas
         total_vendido = sum(ventas)
 
+        # Calcular el promedio por venta dividiendo el total vendido entre el número de ventas
         promedio_ventas = total_vendido / numero_ventas
         
         print("-" * 40)

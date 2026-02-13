@@ -12,13 +12,15 @@ def a10():
     
     try:
         cantidad_productos = int(input("Ingrese la cantidad de productos comprados: "))
+        # Almacenar los precios de los productos en una lista
         productos = []
 
+        # Solicitar el precio de cada producto y almacenarlo en la lista
         for i in range(cantidad_productos):
             precio = int(input(f"Ingrese el precio del producto {i+1}: $"))
             productos.append(precio)
             
-
+        # Calcular el total de la compra sumando los precios de los productos
         total_compra = sum(productos)
         print("-" * 40)
         print(f"El total de la compra es: ${total_compra}")
