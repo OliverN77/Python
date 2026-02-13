@@ -5,7 +5,7 @@
 
 Colección de 25 algoritmos básicos en Python diseñados para practicar conceptos fundamentales de programación, incluyendo entrada/salida de datos, operaciones matemáticas, estructuras condicionales y manejo de errores.
 
-**Desarrollado por:** Oliver Nieto
+**Desarrollado por:** Oliver Nieto Osorio - 3406211
 
 ---
 
