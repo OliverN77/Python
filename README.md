@@ -164,7 +164,7 @@ Al ejecutar el menú principal (`index.py`), verás una interfaz colorida como e
 ```
 ========================================
 Taller 1 - Algoritmos Python
-By Oliver Nieto
+By Oliver Nieto Osorio - 3406211
 Menú principal
 ========================================
 1. Cálculo de suma y promedio: Solicitar al usuario...
