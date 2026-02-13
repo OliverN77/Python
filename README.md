@@ -43,8 +43,8 @@ Cada algoritmo incluye:
 
 1. **Clonar el repositorio**:
 ```bash
-git clone https://github.com/tu-usuario/tu-repositorio.git
-cd tu-repositorio
+git clone https://github.com/OliverN77/Python.git
+cd Python
 ```
 
 2. **Instalar dependencias**:
