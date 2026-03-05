@@ -176,7 +176,7 @@ python gestion_biblioteca.py
 ## 👨‍💻 Autor
 
 **Oliver Nieto Osorio**  
-Código estudiantil: 3406211
+Número de ficha: 3406211
 
 ---
 
