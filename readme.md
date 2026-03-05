@@ -27,7 +27,7 @@ Python/
 │   ├── 4.1.py  →  4.5.py            # Sección 4: Listas y estructuras de datos
 │   └── 5.1.py  →  5.5.py            # Sección 5: Funciones y recursión
 │
-└── mini-taller_integrador/          # Mini Taller Integrador
+└── mini_taller_integrador/          # Mini Taller Integrador
     ├── gestion_biblioteca.py        # Sistema de gestión de biblioteca
     └── biblioteca.txt               # Archivo de datos exportados
 ```
@@ -91,7 +91,7 @@ Colección de **25 algoritmos** que cubren los fundamentos de la programación e
 
 ---
 
-### 📙 3. Mini Taller Integrador (`mini-taller_integrador/`)
+### 📙 3. Mini Taller Integrador (`mini_taller_integrador/`)
 
 Sistema completo de **gestión de biblioteca** que integra todos los conceptos aprendidos.
 
@@ -145,7 +145,7 @@ cd estructuras_de_control_funciones
 python 1.1.py
 
 # Mini Taller - Sistema de gestión de biblioteca
-cd mini-taller_integrador
+cd mini_taller_integrador
 python gestion_biblioteca.py
 ```
 
