@@ -124,7 +124,7 @@ Sistema completo de **gestión de biblioteca** que integra todos los conceptos a
 
 ### Requisitos Previos
 
-- Python 3.x o superior
+- Python 3.14.3 o superior
 - `colorama` (requerido solo para `taller1_algoritmos_basicos/`)
 
 ### Instalación
@@ -165,7 +165,7 @@ python gestion_biblioteca.py
 
 ## 🛠️ Tecnologías Utilizadas
 
-- **Python 3.x** — Lenguaje de programación principal
+- **Python 3.14.3** — Lenguaje de programación principal
 - **Colorama** — Colorización de texto en terminal
 - **f-strings** — Formateo moderno de cadenas
 - **Try-Except** — Manejo robusto de excepciones
