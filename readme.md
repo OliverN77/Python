@@ -15,28 +15,36 @@ Repositorio de ejercicios y talleres prácticos del curso de Python que cubre de
 ```
 Python/
 │
-├── algoritmos_basicos/              # Taller 1 - 25 algoritmos fundamentales
-│   ├── index.py                     # Menú principal interactivo
-│   ├── a1.py  →  a25.py             # Algoritmos individuales (1 al 25)
-│   └── README.md                    # Documentación detallada del taller
+├── taller1_algoritmos_basicos/              # Taller 1 - 25 algoritmos fundamentales
+│   ├── index.py                             # Menú principal interactivo
+│   ├── a1.py  →  a25.py                     # Algoritmos individuales (1 al 25)
+│   └── README.md                            # Documentación detallada del taller
 │
-├── estructuras_de_control_funciones/ # Taller 2 - Estructuras de control y funciones
-│   ├── 1.1.py  →  1.5.py            # Sección 1: Variables y entrada/salida
-│   ├── 2.1.py  →  2.5.py            # Sección 2: Estructuras condicionales
-│   ├── 3.1.py  →  3.5.py            # Sección 3: Ciclos (for / while)
-│   ├── 4.1.py  →  4.5.py            # Sección 4: Listas y estructuras de datos
-│   └── 5.1.py  →  5.5.py            # Sección 5: Funciones y recursión
-│
-└── mini_taller_integrador/          # Mini Taller Integrador
-    ├── gestion_biblioteca.py        # Sistema de gestión de biblioteca
-    └── biblioteca.txt               # Archivo de datos exportados
+└── taller2_Estructuras de control y Funciones/  # Taller 2 - Estructuras de control y funciones
+    ├── requirements.txt                         # Dependencias del taller
+    ├── README.md                                # Documentación del taller
+    ├── taller/                                  # Ejercicios del taller
+    │   ├── run_all.py                           # Script para ejecutar todos los ejercicios
+    │   ├── seccion_1/                           # Sección 1: Variables y entrada/salida
+    │   │   └── a_1.1.py  →  a_1.5.py
+    │   ├── seccion_2/                           # Sección 2: Estructuras condicionales
+    │   │   └── a_2.1.py  →  a_2.5.py
+    │   ├── seccion_3/                           # Sección 3: Ciclos (for / while)
+    │   │   └── a_3.1.py  →  a_3.5.py
+    │   ├── seccion_4/                           # Sección 4: Listas y estructuras de datos
+    │   │   └── a_4.1.py  →  a_4.5.py
+    │   └── seccion_5/                           # Sección 5: Funciones y recursión
+    │       └── a_5.1.py  →  a_5.5.py
+    └── seccion_6_mini_taller/                   # Mini Taller Integrador
+        ├── gestion_biblioteca.py                # Sistema de gestión de biblioteca
+        └── biblioteca.txt                       # Archivo de datos exportados
 ```
 
 ---
 
 ## 📂 Módulos del Proyecto
 
-### 📘 1. Algoritmos Básicos (`algoritmos_basicos/`)
+### 📘 1. Algoritmos Básicos (`taller1_algoritmos_basicos/`)
 
 Colección de **25 algoritmos** que cubren los fundamentos de la programación en Python: operaciones matemáticas, cálculos de salario y comisiones, gestión de ventas, manejo académico y conversiones financieras.
 
@@ -56,42 +64,42 @@ Colección de **25 algoritmos** que cubren los fundamentos de la programación e
 | Finanzas | Conversión de moneda, interés simple e interés compuesto |
 | Logística | Control de inventario, costo de envío, factura de servicios |
 
-> Para más detalles, revisar el [README interno](algoritmos_basicos/README.md).
+> Para más detalles, revisar el [README interno](taller1_algoritmos_basicos/README.md).
 
 ---
 
-### 📗 2. Estructuras de Control y Funciones (`estructuras_de_control_funciones/`)
+### 📗 2. Estructuras de Control y Funciones (`taller2_Estructuras de control y Funciones/`)
 
 **25 ejercicios** organizados en 5 secciones temáticas para practicar las estructuras fundamentales de Python.
 
-**Sección 1 — Variables y Entrada/Salida (`1.x`)**
+**Sección 1 — Variables y Entrada/Salida (`taller/seccion_1/a_1.x`)**
 - Manejo de tipos de datos: `str`, `int`, `float`
 - Solicitud y presentación de datos al usuario
 - Formateo de salida con f-strings
 
-**Sección 2 — Estructuras Condicionales (`2.x`)**
+**Sección 2 — Estructuras Condicionales (`taller/seccion_2/a_2.x`)**
 - Uso de `if`, `elif`, `else` y `match`
 - Clasificación por rangos (edades, categorías)
 - Toma de decisiones con operadores lógicos y de comparación
 
-**Sección 3 — Ciclos (`3.x`)**
+**Sección 3 — Ciclos (`taller/seccion_3/a_3.x`)**
 - Bucles `for` y `while`
 - Iteración sobre rangos y secuencias
 - Control de flujo con `break` y `continue`
 
-**Sección 4 — Listas y Estructuras de Datos (`4.x`)**
+**Sección 4 — Listas y Estructuras de Datos (`taller/seccion_4/a_4.x`)**
 - Creación y manipulación de listas
 - Operaciones CRUD sobre colecciones
 - Uso de `enumerate`, búsqueda y ordenamiento
 
-**Sección 5 — Funciones y Recursión (`5.x`)**
+**Sección 5 — Funciones y Recursión (`taller/seccion_5/a_5.x`)**
 - Definición y llamado de funciones
 - Parámetros, retorno de valores y scope
 - Recursión aplicada (ej: cálculo de factorial)
 
 ---
 
-### 📙 3. Mini Taller Integrador (`mini_taller_integrador/`)
+### 📙 3. Mini Taller Integrador (`taller2_Estructuras de control y Funciones/seccion_6_mini_taller/`)
 
 Sistema completo de **gestión de biblioteca** que integra todos los conceptos aprendidos.
 
@@ -117,7 +125,7 @@ Sistema completo de **gestión de biblioteca** que integra todos los conceptos a
 ### Requisitos Previos
 
 - Python 3.x o superior
-- `colorama` (requerido solo para `algoritmos_basicos/`)
+- `colorama` (requerido solo para `taller1_algoritmos_basicos/`)
 
 ### Instalación
 
@@ -134,18 +142,22 @@ pip install colorama
 
 ```bash
 # Taller 1 - Menú interactivo de algoritmos básicos
-cd algoritmos_basicos
+cd taller1_algoritmos_basicos
 python index.py
 
 # Taller 1 - Ejecutar un algoritmo individual
 python a1.py
 
+# Taller 2 - Ejecutar todos los ejercicios
+cd "taller2_Estructuras de control y Funciones/taller"
+python run_all.py
+
 # Taller 2 - Ejecutar un ejercicio específico
-cd estructuras_de_control_funciones
-python 1.1.py
+cd "taller2_Estructuras de control y Funciones/taller/seccion_1"
+python a_1.1.py
 
 # Mini Taller - Sistema de gestión de biblioteca
-cd mini_taller_integrador
+cd "taller2_Estructuras de control y Funciones/seccion_6_mini_taller"
 python gestion_biblioteca.py
 ```
 
