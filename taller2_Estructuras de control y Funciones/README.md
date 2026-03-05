@@ -6,36 +6,43 @@ Colección de 25 ejercicios prácticos de Python organizados en 5 secciones tem�
 
 ```
 📁 taller/
-├── seccion_1/          → Condicionales (if / elif / else, match/case)
+├── seccion_1/                  → Condicionales (if / elif / else, match/case)
 │   ├── a_1.1.py
 │   ├── a_1.2.py
 │   ├── a_1.3.py
 │   ├── a_1.4.py
 │   └── a_1.5.py
-├── seccion_2/          → Condicionales avanzados y menús interactivos
+├── seccion_2/                  → Condicionales avanzados y menús interactivos
 │   ├── a_2.1.py
 │   ├── a_2.2.py
 │   ├── a_2.3.py
 │   ├── a_2.4.py
 │   └── a_2.5.py
-├── seccion_3/          → Bucles (for / while)
+├── seccion_3/                  → Bucles (for / while)
 │   ├── a_3.1.py
 │   ├── a_3.2.py
 │   ├── a_3.3.py
 │   ├── a_3.4.py
 │   └── a_3.5.py
-├── seccion_4/          → Listas y diccionarios
+├── seccion_4/                  → Listas y diccionarios
 │   ├── a_4.1.py
 │   ├── a_4.2.py
 │   ├── a_4.3.py
 │   ├── a_4.4.py
 │   └── a_4.5.py
-└── seccion_5/          → Funciones
+└── seccion_5/                  → Funciones
     ├── a_5.1.py
     ├── a_5.2.py
     ├── a_5.3.py
     ├── a_5.4.py
     └── a_5.5.py
+
+📁 seccion_6_mini_taller/       → Mini Taller Integrador
+├── gestion_biblioteca.py
+└── biblioteca.txt
+
+├── README.md
+├── requirements.txt
 ```
 
 ---
@@ -89,6 +96,32 @@ Colección de 25 ejercicios prácticos de Python organizados en 5 secciones tem�
 | [a_5.3.py](taller/seccion_5/a_5.3.py) | Calculadora refactorizada: cada operación (`sumar`, `restar`, `multiplicar`, `dividir`) es una función separada. |
 | [a_5.4.py](taller/seccion_5/a_5.4.py) | Función `es_palindromo(texto)`: retorna `True`/`False` ignorando espacios, mayúsculas y puntuación. |
 | [a_5.5.py](taller/seccion_5/a_5.5.py) | Función `factorial(n)`: calcula el factorial de forma recursiva con validación para números negativos. |
+
+## Sección 6 — Mini Taller Integrador (`seccion_6_mini_taller/`)
+
+Sistema completo de gestión de biblioteca que integra todos los conceptos de las secciones anteriores: listas de diccionarios, funciones, bucles, condicionales y manejo de archivos.
+
+| Archivo | Resumen |
+|---------|--------|
+| [gestion_biblioteca.py](seccion_6_mini_taller/gestion_biblioteca.py) | Sistema de gestión bibliográfica con menú interactivo y múltiples funciones. |
+| [biblioteca.txt](seccion_6_mini_taller/biblioteca.txt) | Archivo de datos generado al exportar el catálogo. |
+
+**Funciones implementadas:**
+
+| Función | Descripción |
+|---------|-------------|
+| `agregar_libro()` | Registra un nuevo libro validando que el año sea numérico y mayor a 1900. |
+| `mostrar_libros()` | Muestra todos los libros con formato: `ID: 1 - 'Título' (Autor, Año) [Estado]`. |
+| `buscar_libro()` | Busca libros por título o autor mostrando coincidencias parciales. |
+| `prestar_libro(id)` | Cambia el estado a *Prestado* si el libro existe y está disponible. |
+| `devolver_libro(id)` | Cambia el estado a *Disponible* nuevamente. |
+| `eliminar_libro(id)` | Elimina un libro solo si no está prestado actualmente. |
+| `menu_principal()` | Menú interactivo con `while` que agrupa todas las opciones anteriores. |
+| `libros_por_autor(autor)` | Lista todos los libros de un autor específico. |
+| `estadisticas()` | Muestra el total de libros, cuántos están disponibles y cuántos prestados. |
+| `exportar_a_txt()` | Guarda el catálogo completo en `biblioteca.txt`. |
+
+**Estructura de datos:** Lista de diccionarios con campos `id`, `titulo`, `autor`, `año` y `disponible` (id autoincremental).
 
 ---
 
