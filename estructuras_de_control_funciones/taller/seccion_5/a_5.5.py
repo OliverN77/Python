@@ -10,10 +10,15 @@ def factorial(n):
         result = factorial(n - 1)
         return n * result
     
-numero = int(input("Ingrese un número entero positivo para calcular su factorial: "))
-if numero >= 0:
-    print(f"El factorial de {numero} es: {factorial(numero)}")
-elif numero == 0:
-    print(f"El factorial de {numero} es: {factorial(numero)}")
-else:
-    print("Error: El número debe ser un entero positivo.")
+def run():
+    numero = int(input("Ingrese un número entero positivo para calcular su factorial: "))
+    if numero >= 0:
+        print(f"El factorial de {numero} es: {factorial(numero)}")
+    elif numero == 0:
+        print(f"El factorial de {numero} es: {factorial(numero)}")
+    else:
+        print("Error: El número debe ser un entero positivo.")
+
+
+if __name__ == "__main__":
+    run()

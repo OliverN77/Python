@@ -34,7 +34,6 @@ biblioteca = []  # Lista vacía - cada elemento será un diccionario representan
 contador_id = 0  # Renombrado para no pisarlo con el parámetro 'id' de las funciones
 
 def _formato_libro(libro, indent=""):
-    """Devuelve la línea de un libro ya coloreada."""
     if libro["disponible"]:
         estado_color = Fore.GREEN + Style.BRIGHT + "Disponible" + RESET
     else:
@@ -192,7 +191,7 @@ def menu_principal():
         elif opcion == "9":
             exportar_a_txt()
         elif opcion == "0":
-            print(AVISO + "\nHasta luego. ¡Que tengas un buen día! 📚")
+            print(AVISO + "\nSaliendo...")
             break
         else:
             print(ERROR + "✘ Opción no válida. Ingrese un número del 0 al 9.")

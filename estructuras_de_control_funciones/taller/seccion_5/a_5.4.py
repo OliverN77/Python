@@ -9,8 +9,13 @@ def es_palindromo(texto):
     else:        
         return False
 
-texto = str(input("Ingrese un texto para verificar si es un palíndromo: "))
-if es_palindromo(texto):
-    print("El texto es un palíndromo.")
-else:
-    print("El texto no es un palíndromo.")
+def run():
+    texto = str(input("Ingrese un texto para verificar si es un palíndromo: "))
+    if es_palindromo(texto):
+        print("El texto es un palíndromo.")
+    else:
+        print("El texto no es un palíndromo.")
+
+
+if __name__ == "__main__":
+    run()

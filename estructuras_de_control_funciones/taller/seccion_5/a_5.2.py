@@ -9,11 +9,16 @@ def calcular_promedio(numeros):
     
     
 
-numeros = int(input("Ingrese la cantidad de números que desea promediar: "))
-lista_numeros = []
+def run():
+    numeros = int(input("Ingrese la cantidad de números que desea promediar: "))
+    lista_numeros = []
 
-for i in range(numeros):
-    numero = float(input(f"Ingrese el número {i+1}: "))
-    lista_numeros.append(numero)
+    for i in range(numeros):
+        numero = float(input(f"Ingrese el número {i+1}: "))
+        lista_numeros.append(numero)
 
-calcular_promedio(lista_numeros)
+    calcular_promedio(lista_numeros)
+
+
+if __name__ == "__main__":
+    run()

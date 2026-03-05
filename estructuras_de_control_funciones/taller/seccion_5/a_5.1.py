@@ -9,6 +9,11 @@ def saludar(nombre, hora):
         print(f"Buenas noches {nombre}")
     
     
-nombre = str(input("Ingrese su nombre: "))
-hora = int(input("Ingrese la hora del día (0-23): "))
-saludar(nombre, hora)
+def run():
+    nombre = str(input("Ingrese su nombre: "))
+    hora = int(input("Ingrese la hora del día (0-23): "))
+    saludar(nombre, hora)
+
+
+if __name__ == "__main__":
+    run()
